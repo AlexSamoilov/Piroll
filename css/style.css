@@ -1,0 +1,302 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat-Regular.eot');
+  src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('Montserrat-Regular.woff2') format('woff2'), url('Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
+
+.header {
+  background-color: #e9e9e9;
+  height: 700px;
+}
+
+/*test*/
+
+
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+/*MAIN*/
+
+
+a {
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+a:hover {
+
+  color: #10c9c3;
+
+}
+
+img {
+
+  width: 100%;
+
+}
+
+header {
+
+  background: #fff;
+  width: 100%;
+  height: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 4px solid #4C9CF1;
+  z-index: 100;
+
+}
+
+#logo{
+
+  margin: 20px;
+  float: left;
+  width: 200px;
+  height: 40px;
+  background: url(../img/logo.png) no-repeat center;
+  display: block;
+
+}
+
+nav {
+
+  float: right;
+  padding: 20px;  
+
+}
+
+#menu-icon {
+
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url(../img/menu-icon.png) center;
+
+}
+
+a:hover#menu-icon {
+
+  background-color: #444;
+  border-radius: 4px 4px 0 0;
+
+}
+
+ul {
+
+  list-style: none;
+
+}
+
+li {
+
+  display: inline-block;
+  float: left;
+  padding: 10px
+
+}
+
+.current {
+
+  color: #2262AD;
+
+}
+
+section {
+
+  height: 300px;
+  margin: 0 auto;
+  border-top:  5px solid green;
+  border-bottom: 5px solid red;
+  padding: 20px
+
+}
+
+h1 {
+
+  font-size: 2em;
+  color: #2262AD;
+  line-height: 1.15em;
+  margin: 20px 0 ;
+
+}
+
+p {
+
+  line-height: 1.45em;
+  margin-bottom: 20px;
+
+}
+
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+  header {
+
+    position: absolute;
+
+  }
+
+  #menu-icon {
+
+    display:inline-block;
+
+  }
+
+  nav ul, nav:active ul { 
+
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #444;
+    right: 20px;
+    top: 60px;
+    width: 50%;
+    border-radius: 4px 0 4px 4px;
+
+  }
+
+  nav li {
+
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+
+  }
+
+  nav:hover ul {
+
+    display: block;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*menu*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #e9e9e9;
+    overflow: hidden;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    /*background-color: #ddd;*/
+    color: #10c9c3;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    /*background-color: #4CAF50;*/
+    color: #10c9c3;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
