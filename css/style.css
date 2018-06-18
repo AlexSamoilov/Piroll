@@ -122,12 +122,15 @@ p {
   transform: translateY(-50%);
 }
 
-.header-content h1,
-.header-content p {
+.header-content h1 {
   margin-bottom: 30px;
+  font-size: 38px; 
+  font-weight: bold;
 }
 
 .header-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
   padding: 10px 0 20px 0;
 }
 
@@ -170,6 +173,17 @@ h2 {
   text-align: center;
 }
 
+.about-content h2 {
+  margin-bottom: 20px;
+  font-size: 30px; 
+  font-weight: bold;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
 .about-content {
   width: 41.67%;
   margin: auto;
@@ -197,8 +211,15 @@ h2 {
   width: 42%;
 }
 
-.profskills-content h2
+.profskills-content h2 {
+  margin-bottom: 20px;
+  font-size: 30px; 
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
 .profskills-content p {
+  font-size: 12px; 
   letter-spacing: 0.5px;
   font-weight: bold;
 }
@@ -343,6 +364,17 @@ h2 {
   text-align: center;
 }
 
+.process-content h2 {
+  margin-bottom: 20px;
+  font-size: 30px; 
+  font-weight: bold;
+}
+
+.process-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
 .process-video {
   width: 84%;
   margin: auto;
@@ -411,6 +443,16 @@ h2 {
   color: white;
 }
 
+.slider-container h3 {
+  margin-bottom: 20px;
+  font-size: 24px; 
+}
+
+.slider-container p {
+  margin-bottom: 20px;
+  font-size: 12px; 
+}
+
 .slider-container p:first-child {
   font-size: 1.9em;
   margin-bottom: 30px;
@@ -455,7 +497,7 @@ h2 {
 }
 
 .partners .partners-logo {
-  width: 65%;
+  width: 75%;
   display: flex;
   margin: auto;
   flex-direction: row;
@@ -557,19 +599,14 @@ footer a:hover {
 @media only screen and (max-width : 640px) {
 
   header {
-
     position: absolute;
-
   }
 
   #menu-icon {
-
     display:inline-block;
-
   }
 
   nav ul, nav:active ul { 
-
     display: none;
     position: absolute;
     padding: 20px;
@@ -579,22 +616,17 @@ footer a:hover {
     top: 60px;
     width: 50%;
     border-radius: 4px 0 4px 4px;
-
   }
 
   nav li {
-
     text-align: center;
     width: 100%;
     padding: 10px 0;
     margin: 0;
-
   }
 
   nav:hover ul {
-
     display: block;
-
   }
 
 /*END MEDIA QUERY*/
